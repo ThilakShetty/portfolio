@@ -20,13 +20,9 @@ const Projects = (props) => {
             successful outcomes.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-4 ">
           {projects.map((project) => (
-            <a
-              href={project.link}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4"
-            >
+            <div key={project.image} className="sm:w-1/2 w-100 p-4">
               <div className="flex relative">
                 <img
                   alt="gallery"
@@ -43,7 +39,7 @@ const Projects = (props) => {
                   <p className="leading-relaxed">{project.description}</p>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
